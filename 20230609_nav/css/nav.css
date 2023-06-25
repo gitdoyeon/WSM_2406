@@ -1,0 +1,107 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+/* Variables CSS */
+:root {
+    /* color */
+    --first-color: #008156;
+    --second-color: #efb11c;
+    --body-color: #000;
+
+    /* font */
+    --body-font: 'Nanum Myeongjo', serif;
+    --h1-font-size: 2rem;   /* 32px */
+    --h2-font-size: 1.5rem; /* 24px */
+    --h3-font-size: 1.25rem;    /* 20px */
+    --normal-font-size: 1rem;   /* 16px */
+    --small-font-size: 0.8rem;
+    --smaller-font-size: 0.6rem;
+    --font-regular: 400;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--body-color);
+}
+
+/* nav */
+header {
+    background-color: var(--first-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+nav {
+    height: 44px;
+}
+.nav.container {
+    display: flex;  /* 기본값: 수평 정렬 */
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    padding: 0 16px;    /* 위아래:0, 왼오른: 16px */
+}
+.nav.container a {
+    color: #fff;    /* 링크 하얗게 */
+}
+.nav-list {
+    display: flex;  /* 기본값: 수평 정렬 */
+    column-gap: 80px;   /* item 의 열 사이 공간 */
+    font-weight: var(--font-extra-bold);
+}
+.nav-toggle {
+    font-size: var(--h2-font-size); /* 햄버거 메뉴 살짝 크게 */
+    visibility: hidden; /* 햄버거 메뉴 안보이게 */
+}
+
+/* tablet */
+@media screen and (max-width: 720px) {
+
+}
+
+/* mobile */
+@media screen and (max-width: 540px) {
+    /* .nav-logo 가운데 */ 
+    .nav-logo {
+        margin: 0 auto;
+    }
+    /* .nav-list navbar 아래로 */
+    .nav-list {
+        position: absolute;
+        top: 44px;  /* navbar 아래로 */
+        right: 0;   /* 너비를 양 옆으로 늘리기 */
+        left: 0;    /* 너비를 양 옆으로 늘리기 */
+        flex-direction: column; /* 수직 배열 */
+        /* align-items: center;    교차축 가운데 */
+        text-align: center; /* 글자만 가운데로 */
+        background-color: rgba(239, 177, 28, 0.4);
+        backdrop-filter: blur(8px); /* blur 효과 */
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+    .nav-item {
+        padding: 1em 0;
+        border-bottom: 2px solid #fff;
+    }
+    .nav-link {
+        display: block;
+    }
+    /* .nav-toogle 보이게 */
+    .nav-toggle {
+        visibility: visible;
+        position: absolute; /* .nav-logo 가운데 정확히 위치 */
+        right: 16px;    /* 오른쪽 여백 16px 위치로 */
+    }
+
+    /* .show-menu하면, .nav-list 보이게 */
+    /* .show-menu하면, .nav-toggle 버튼 X로 */
+    .show-menu {
+        height: 156px;
+    }
+}

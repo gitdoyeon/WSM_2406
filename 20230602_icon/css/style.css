@@ -1,0 +1,8 @@
+.bi-list {
+    font-size: 10rem;   /* 1rem == 16px == 대문자M의 너비 */
+    color: gold;
+}
+.bi-plus-lg {
+    font-size: 160px;
+    color: crimson;
+}

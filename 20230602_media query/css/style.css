@@ -1,0 +1,18 @@
+/* desktop */
+body {
+    background-color: darkseagreen;
+}
+
+/* tablet */
+@media screen and (max-width: 720px) {
+    body {
+        background-color: magenta;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 540px) {
+    body {
+        background-color:gold;
+    }
+}
