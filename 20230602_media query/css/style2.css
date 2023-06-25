@@ -1,0 +1,25 @@
+/* 3단계의 동작을 min-width를 써서 만드세요 */
+/* desktop: seagreen */
+/* tablet: magenta */
+/* mobile: gold */
+
+/* mobile: 0~540px */
+body {
+    background-color: tomato;
+}
+
+/* tablet: 541~720px */
+@media screen and (min-width: 541px) {
+    body {
+        background-color: greenyellow;
+    }
+}
+
+/* desktop: 721px~ */
+@media screen and (min-width: 721px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+
