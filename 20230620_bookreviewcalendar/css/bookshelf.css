@@ -26,7 +26,7 @@
     transform: translateY(-8px);    /* 위로 8px 이동하자 */   
 }
 
-.book-item > img {
+.book-item img {
     width: 150px;
     display: block; /* 이미지 밑에 살짝 생기는 여백 문제 해결 */
 }
