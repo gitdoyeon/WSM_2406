@@ -33,6 +33,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 100;   /* 모바일 버전으로 헸을 때 nav바(헤더)를 가리는 문제 해결 */
 }
 nav {
     height: 44px;
