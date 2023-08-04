@@ -1,0 +1,63 @@
+main {
+    margin-top: calc(44px+100px);
+}
+
+.container {
+    display: flex;
+}
+
+.image-info-groups {
+    /* flex-wrap: wrap;         태블릿 너비일때 info-groups 전체가 먼저 wrap 돼버려서 주석 처리 */
+}
+
+.info-groups {
+    flex-wrap: wrap;
+}
+
+.info-group {
+    flex-direction: column;
+}
+
+.info {
+    flex-direction: column;
+}
+
+.reviews {
+    flex-direction: column;
+}
+
+.review {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 540px) {
+    .image-info-groups {
+        flex-direction: column;
+    }
+    .info-groups {
+        flex-direction: column;
+    }
+}
+
+/* delect me */
+main div {
+    border: 2px solid black;
+}
+
+.book-image {
+    background-color: bisque;
+    min-width: 200px;
+    width: 200px;
+    height: 400px;
+}
+
+.info {
+    background-color: tomato;
+    width: 200px;
+    height: 100px;
+}
+
+.review {
+    background-color: pink;
+    height: 100px;
+}
