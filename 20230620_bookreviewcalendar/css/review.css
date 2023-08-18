@@ -10,6 +10,23 @@ main {
 .image-info-groups {
     /* flex-wrap: wrap;     태블릿 너비일때 info-groups 전체가 먼저 wrap 돼버려서 주석 처리 */
 }
+
+.book-image {
+    width: 200px;
+    min-width: 200px;   /*이미지 너비가 자동으로 줄어드는 문제 해결*/
+}   
+
+.book-image > img {
+    display: block;     /*이미지 아래 살짝 하얀 여백 생기는 문제 해결*/
+    border-radius: 8px;     /*(위에) 좌 우 / (아래) 우 좌*/
+    box-shadow: 0 16px 32px #aaa;
+    transition: all 0.4s;
+}
+
+.book-image > img:hover {
+    transform: perspective(400px) rotateY(20deg);   /*돌아감*/
+}
+
 .info-groups {
     flex-wrap: wrap;
     margin: 0 40px;
@@ -79,15 +96,6 @@ main {
 /* main div {
     border: 2px solid black;
 } */
-
-.book-image {
-    width: 200px;
-    min-width: 200px;   /*이미지 너비가 자동으로 줄어드는 문제 해결*/
-}   
-
-.book-image > img {
-    display: block;     /*이미지 아래 살짝 하얀 여백 생기는 문제 해결*/
-}
 
 .info {
     /* height: 100px; */
