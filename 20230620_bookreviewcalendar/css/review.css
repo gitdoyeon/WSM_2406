@@ -1,19 +1,16 @@
 main {
-    margin-top: calc(44px+100px);
+    margin-top: calc(44px + 100px);
 }
 
 .container {
     display: flex;
 }
-
 .image-info-groups {
-    /* flex-wrap: wrap;         태블릿 너비일때 info-groups 전체가 먼저 wrap 돼버려서 주석 처리 */
+    /* flex-wrap: wrap;     태블릿 너비일때 info-groups 전체가 먼저 wrap 돼버려서 주석 처리 */
 }
-
 .info-groups {
     flex-wrap: wrap;
 }
-
 .info-group {
     flex-direction: column;
 }
@@ -25,7 +22,6 @@ main {
 .reviews {
     flex-direction: column;
 }
-
 .review {
     flex-direction: column;
 }
@@ -39,25 +35,24 @@ main {
     }
 }
 
-/* delect me */
+
+
+/* delete me */
 main div {
     border: 2px solid black;
 }
-
 .book-image {
     background-color: bisque;
-    min-width: 200px;
     width: 200px;
+    min-width: 200px;
     height: 400px;
 }
-
 .info {
     background-color: tomato;
     width: 200px;
     height: 100px;
 }
-
 .review {
-    background-color: pink;
+    background-color: khaki;
     height: 100px;
 }
