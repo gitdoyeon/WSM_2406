@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.item {
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;    /* 수평 가운데 */
+    align-items: center;        /* 수직 가운데 */
+    text-align: center;         /* 여러 줄일 때 가운데 정렬 */
+}
+
+.weekday {
+    color: #fff;
+    background-color: rgb(102, 160, 74);
+}
+
+.item:bth-child(1) {
+    background-color: transparent;
+}
+
+.item:nth-child(7),
+.item:nth-child(13),
+.item:nth-child(18),
+.item:nth-child(23),
+.item:nth-child(26),
+.item:nth-child(32),
+.item:nth-child(37) {
+    background-color: rgb(162, 227, 142);
+}
+
+/* .item:nth-child(9),
+.item:nth-child(10),
+.item:nth-child(16),
+.item:nth-child(18),
+.item:nth-child(20),
+.item:nth-child(21),
+.item:nth-child(22),
+.item:nth-child(24),
+.item:nth-child(26),
+.item:nth-child(27),
+.item:nth-child(28),
+.item:nth-child(28),
+.item:nth-child(36),
+.item:nth-child(39),
+.item:nth-child(41),
+.item:nth-child(42),
+.item:nth-child(47) {
+    background-color: rgb(229, 255, 217);
+} */
+
+.item:nth-child(10) {
+    background-color: rgb(186, 255, 203);
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+.item:nth-child(17) {
+    background-color: rgb(186, 255, 203);
+    grid-column: -2 / -1;
+    /* 시험 문제 나옴 */
+    /* grid-row: 3 / 5; */
+    /* grid-row: 3 / span 2;  */ 
+    /* grid-row: 3 / 5; */
+    grid-row: 5 / 3;
+}
+
+/* 파이썬 */
+.item:nth-child(19) {     
+    background-color: rgb(186, 255, 203);
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+}
+
+.item:nth-child(20) {
+    background-color: rgb(186, 255, 203);
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+}
+
+.item:nth-child(21) {
+    background-color: rgb(186, 255, 203);
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+}
+
+.item:nth-child(31) {
+    background-color: rgb(186, 255, 203);
+    grid-column: 6 / 7;
+    grid-row: 6 / 8;
+}
+
+.item:nth-child(35) {
+    /* background-color: rgb(186, 255, 203); */
+    grid-column: 4 / 5;
+    grid-row: 7 / 9;
+}
+
+.item:nth-child(36) {
+    /* background-color: rgb(186, 255, 203); */
+    grid-column: 5 / 6;
+    grid-row: 7 / 9;
+}
