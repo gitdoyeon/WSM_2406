@@ -28,10 +28,10 @@
     grid-area: side_left;
     background-color: rgb(211, 235, 248);
 }
-d
+
 .main {
     grid-area: main;
-    background-color: rgb(150, 210, 255);
+    background-color: rgb(232, 245, 255);
 }
 
 .side2 {
