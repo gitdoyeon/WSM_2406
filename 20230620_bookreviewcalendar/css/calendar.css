@@ -37,10 +37,21 @@ main {
     align-items: center; */
 }
 
+/* 오늘에 맞는 요일로 이동하자 */
 .date.item:nth-child(1) {
     /* background-color: rgb(133, 166, 236); */
     grid-column-start: 6;
     /* border-radius: 10px; */
+}
+
+/* 토요일 파란색 글자로 */
+.date.item:nth-child(7n+2) {
+    color: blue;
+}
+
+/* 일요일 빨간색 글자로 */
+.date.item:nth-child(7n+3) {
+    color: red;
 }
 
 .review.flex-container {
