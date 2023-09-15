@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>book review calendar - review</title>
+    <title>review</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/calendar.css">
+
+
 </head>
+
 <body>
-    <!-- 헤더 -->
     <header>
-        <nav class="nav container">
+        <nav class="nav container"> <!--여러 개의 클래스 작성할 때 사용-->
             <a href="" class="nav-logo">
                 <i class="bi bi-bookmarks"></i>
             </a>
@@ -21,27 +24,23 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html" class="nav-link">책장</a></li>
                 <li class="nav-item"><a href="" class="nav-link">리뷰</a></li>
-                <li class="nav-item"><a href="calender.html" class="nav-link">캘린더</a></li>
+                <li class="nav-item"><a href="calendar.html" class="nav-link">캘린더</a></li>
             </ul>
+
+            <div class="nav_toggle" id="nav_toggle">
+                <i class="bi bi-list"></i>
+            </div>
         </nav>
-    </header>    
+    </header>
 
-    <!-- 메인 -->
     <main id="calendar">
-        <!-- title -->
+        <!-- title < 9월 -->
         <div class="title flex-container">
-            <div class="left"></div>
-            <div class="month">
-                <i class="bi bi-caret-left"></i>
-            </div>
+            <div class="left"><i class="bi bi-caret-left"></i></div>
             <div class="month"></div>
-            <div class="month">
-                <i class="bi bi-caret-right"></i>
-            </div>
-            <div class="right"></div>
+            <div class="right"><i class="bi bi-caret-right"></i></div>
         </div>
-
-        <!-- weekday 일 월 화 수 목 금 토-->
+        <!-- weekday 일 월 화 수 목 금 토 -->
         <div class="weekday container">
             <div class="weekday item">일</div>
             <div class="weekday item">월</div>
@@ -53,7 +52,6 @@
         </div>
 
         <!-- dates 1 2 3 4 ... 30 -->
-        <!-- .data-container{$}*30 -->
         <div class="dates container">
             <!-- <div class="date item">1</div>
             <div class="date item">2</div>
@@ -90,14 +88,14 @@
         <!-- review -->
         <div class="review flex-container">
             <div class="book-title">제목 : 역행자</div>
-            <div class="book-read-date">읽은 날짜 : 9월 5일 목요일</div>
+            <div class="book-read-date">읽은 날짜 : 2023년 9월 12일</div>
             <div class="book-page">쪽수 : 129</div>
         </div>
-        
     </main>
 
-    <script src="js/data.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/data.js"></script>
     <script src="js/calendar.js"></script>
 </body>
+
 </html>
